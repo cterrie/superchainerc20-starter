@@ -241,7 +241,7 @@ In this example, we will update the [GovernanceToken](https://github.com/ethereu
 Import the `IERC7802` and update your contract to inherit from it.
 
 ```solidity
-import { IERC7802 } from "@contracts-bedrock/L2/interfaces/IERC7802.sol";
+import { IERC7802 } from "@interop-lib/interfaces/IERC7802.sol";
 
 contract GovernanceToken is IERC7802, ERC20Burnable, ERC20Votes, Ownable {
     // Contract implementation here
@@ -299,7 +299,7 @@ In this example our token supports `IERC7802`, `IERC20`, and `IERC165`
 
 ```solidity
 /// @notice Query if a contract implements an interface
-/// @param interfaceID The interface identifier, as specified in ERC-165
+/// @param _interfaceId The interface identifier, as specified in ERC-165
 /// @dev Interface identification is specified in ERC-165. This function
 /// uses less than 30,000 gas.
 /// @return `true` if the contract implements `interfaceID` and
